@@ -1,0 +1,16 @@
+<h1>Product List</h1>
+
+<table>
+    <thead>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Price</th>
+        </thead>
+        <% @products.each do |product| %>
+          <tr>
+                <td> <%= product.name %> </td>
+                <td> <%= product.description %> </td>
+                <td> <%= product.price %> </td>
+            </tr>
+        <% end %>
+</table>
